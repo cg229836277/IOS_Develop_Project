@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UILableTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="m1q-M0-T5a">
+                                <rect key="frame" x="134" y="28" width="332" height="29"/>
+                                <segments>
+                                    <segment title="红色"/>
+                                    <segment title="黄色"/>
+                                    <segment title="绿色"/>
+                                    <segment title="紫色"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8v5-pP-L6j">
+                                <rect key="frame" x="270" y="89" width="60" height="30"/>
+                                <state key="normal" title="给我花朵"/>
+                                <connections>
+                                    <action selector="giveMeFlower:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Nc-11-y9j"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zlj-pD-nPX">
+                                <rect key="frame" x="134" y="172" width="332" height="328"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8v5-pP-L6j" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="5nB-x9-9bb"/>
+                            <constraint firstItem="zlj-pD-nPX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="7mu-TC-XBD"/>
+                            <constraint firstItem="zlj-pD-nPX" firstAttribute="top" secondItem="8v5-pP-L6j" secondAttribute="bottom" constant="40" id="Fc0-sD-04a"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zlj-pD-nPX" secondAttribute="trailing" constant="10" id="HI0-2x-vUG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="m1q-M0-T5a" secondAttribute="trailing" constant="10" id="N6D-ep-SPd"/>
+                            <constraint firstItem="m1q-M0-T5a" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="P2p-TD-YiN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zlj-pD-nPX" secondAttribute="bottom" constant="40" id="S7c-PI-jBF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8v5-pP-L6j" secondAttribute="trailing" constant="10" id="ayV-dW-XKK"/>
+                            <constraint firstItem="8v5-pP-L6j" firstAttribute="top" secondItem="m1q-M0-T5a" secondAttribute="bottom" constant="20" id="bZr-Cs-Ofb"/>
+                            <constraint firstItem="m1q-M0-T5a" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="cw7-o1-EBr"/>
+                            <constraint firstItem="zlj-pD-nPX" firstAttribute="top" secondItem="8v5-pP-L6j" secondAttribute="bottom" constant="20" id="kx1-bM-cT8"/>
+                            <constraint firstItem="8v5-pP-L6j" firstAttribute="top" secondItem="m1q-M0-T5a" secondAttribute="bottom" constant="40" id="zzA-bs-0FU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="GiveFlowerBtn" destination="8v5-pP-L6j" id="mbP-WO-Y52"/>
+                        <outlet property="selectColorView" destination="m1q-M0-T5a" id="oW3-ed-NIE"/>
+                        <outlet property="showColorLabel" destination="zlj-pD-nPX" id="Vpd-8G-Fhq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="219" y="362"/>
+        </scene>
+    </scenes>
+</document>
