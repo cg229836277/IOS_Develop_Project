@@ -28,10 +28,13 @@
                             <constraint firstItem="mTW-np-pXy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="vdS-bV-cuL"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="myDataPickerView" destination="mTW-np-pXy" id="RZi-tz-tiV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="93" y="340"/>
+            <point key="canvasLocation" x="31" y="338"/>
         </scene>
     </scenes>
 </document>
