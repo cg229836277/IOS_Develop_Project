@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB465CCF1C019A8E00B69F35 /* 1.JPG in Resources */ = {isa = PBXBuildFile; fileRef = DB465CCC1C019A8E00B69F35 /* 1.JPG */; };
+		DB465CD01C019A8E00B69F35 /* 2.JPG in Resources */ = {isa = PBXBuildFile; fileRef = DB465CCD1C019A8E00B69F35 /* 2.JPG */; };
+		DB465CD11C019A8E00B69F35 /* 4.JPG in Resources */ = {isa = PBXBuildFile; fileRef = DB465CCE1C019A8E00B69F35 /* 4.JPG */; };
+		DB465CD81C01E57600B69F35 /* ChuckCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB465CD71C01E57600B69F35 /* ChuckCell.swift */; };
+		DB465CDC1C01E70500B69F35 /* ChuckCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB465CDB1C01E70500B69F35 /* ChuckCellView.xib */; };
 		DB6F25EF1BFE07EB004B8BE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6F25EE1BFE07EB004B8BE9 /* AppDelegate.swift */; };
 		DB6F25F11BFE07EB004B8BE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6F25F01BFE07EB004B8BE9 /* ViewController.swift */; };
 		DB6F25F41BFE07EB004B8BE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6F25F21BFE07EB004B8BE9 /* Main.storyboard */; };
@@ -16,6 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB465CCC1C019A8E00B69F35 /* 1.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 1.JPG; path = /Users/chuckchan/Desktop/1.JPG; sourceTree = "<absolute>"; };
+		DB465CCD1C019A8E00B69F35 /* 2.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 2.JPG; path = /Users/chuckchan/Desktop/2.JPG; sourceTree = "<absolute>"; };
+		DB465CCE1C019A8E00B69F35 /* 4.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 4.JPG; path = /Users/chuckchan/Desktop/4.JPG; sourceTree = "<absolute>"; };
+		DB465CD71C01E57600B69F35 /* ChuckCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChuckCell.swift; sourceTree = "<group>"; };
+		DB465CDB1C01E70500B69F35 /* ChuckCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChuckCellView.xib; sourceTree = "<group>"; };
 		DB6F25EB1BFE07EB004B8BE9 /* UITableViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UITableViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB6F25EE1BFE07EB004B8BE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB6F25F01BFE07EB004B8BE9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -23,7 +33,7 @@
 		DB6F25F51BFE07EB004B8BE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB6F25F81BFE07EB004B8BE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB6F25FA1BFE07EB004B8BE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DB6F26001BFE0C7D004B8BE9 /* 3.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 3.JPG; path = ../../../Users/chuckchan/Desktop/3.JPG; sourceTree = "<group>"; };
+		DB6F26001BFE0C7D004B8BE9 /* 3.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 3.JPG; path = /Users/chuckchan/Desktop/3.JPG; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,9 +47,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB465CD21C01E0E300B69F35 /* ImageSources */ = {
+			isa = PBXGroup;
+			children = (
+				DB465CCC1C019A8E00B69F35 /* 1.JPG */,
+				DB465CCD1C019A8E00B69F35 /* 2.JPG */,
+				DB465CCE1C019A8E00B69F35 /* 4.JPG */,
+				DB6F26001BFE0C7D004B8BE9 /* 3.JPG */,
+			);
+			name = ImageSources;
+			sourceTree = "<group>";
+		};
 		DB6F25E21BFE07EB004B8BE9 = {
 			isa = PBXGroup;
 			children = (
+				DB465CDB1C01E70500B69F35 /* ChuckCellView.xib */,
+				DB465CD21C01E0E300B69F35 /* ImageSources */,
 				DB6F25ED1BFE07EB004B8BE9 /* UITableViewTest */,
 				DB6F25EC1BFE07EB004B8BE9 /* Products */,
 			);
@@ -56,13 +79,13 @@
 		DB6F25ED1BFE07EB004B8BE9 /* UITableViewTest */ = {
 			isa = PBXGroup;
 			children = (
-				DB6F26001BFE0C7D004B8BE9 /* 3.JPG */,
 				DB6F25EE1BFE07EB004B8BE9 /* AppDelegate.swift */,
 				DB6F25F01BFE07EB004B8BE9 /* ViewController.swift */,
 				DB6F25F21BFE07EB004B8BE9 /* Main.storyboard */,
 				DB6F25F51BFE07EB004B8BE9 /* Assets.xcassets */,
 				DB6F25F71BFE07EB004B8BE9 /* LaunchScreen.storyboard */,
 				DB6F25FA1BFE07EB004B8BE9 /* Info.plist */,
+				DB465CD71C01E57600B69F35 /* ChuckCell.swift */,
 			);
 			path = UITableViewTest;
 			sourceTree = "<group>";
@@ -126,9 +149,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB465CD11C019A8E00B69F35 /* 4.JPG in Resources */,
 				DB6F25F91BFE07EB004B8BE9 /* LaunchScreen.storyboard in Resources */,
 				DB6F25F61BFE07EB004B8BE9 /* Assets.xcassets in Resources */,
+				DB465CDC1C01E70500B69F35 /* ChuckCellView.xib in Resources */,
+				DB465CCF1C019A8E00B69F35 /* 1.JPG in Resources */,
 				DB6F25F41BFE07EB004B8BE9 /* Main.storyboard in Resources */,
+				DB465CD01C019A8E00B69F35 /* 2.JPG in Resources */,
 				DB6F26011BFE0C7D004B8BE9 /* 3.JPG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB6F25F11BFE07EB004B8BE9 /* ViewController.swift in Sources */,
+				DB465CD81C01E57600B69F35 /* ChuckCell.swift in Sources */,
 				DB6F25EF1BFE07EB004B8BE9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +317,7 @@
 				DB6F25FF1BFE07EB004B8BE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
