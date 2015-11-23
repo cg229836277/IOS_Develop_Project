@@ -23,6 +23,9 @@ class ViewController:UITableViewController,UISearchBarDelegate{
         //searchTableView.dataSource = self
         searchBar.delegate = self
         searchBar.showsScopeBar = true
+        self.searchColors = colors
+        
+        self.searchTableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         
     }
     
@@ -31,42 +34,28 @@ class ViewController:UITableViewController,UISearchBarDelegate{
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if tableView === self.searchDisplayController?.searchResultsTableView{
-            return self.searchColors.count
-        }else{
-            return self.colors.count
-        }
+        return self.searchColors.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = self.tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
-        var color:String
-        if tableView === self.searchDisplayController!.searchResultsTableView{
-            color = self.searchColors[indexPath.row] as String
-        }else{
-            color = self.colors[indexPath.row] as String
-        }
+        let color = self.searchColors[indexPath.row] as String
         cell.textLabel?.text = color
         return cell
     }
     
-    func searchDisplayController(controller: UISearchDisplayController! , shouldReloadTableForSearchScope searchOption: Int) -> Bool{
-            self.filterContentForRearchText(self.searchDisplayController!.searchBar.text!)
-            return true
+    func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchText == ""{
+            self.searchColors = self.colors
+        }else{
+            self.searchColors = []
+            for tempData in colors{
+                if tempData.lowercaseString.hasPrefix(searchText){
+                    self.searchColors.append(tempData)
+                }
+            }
         }
-    
-    func searchDisplayController(controller:UISearchDisplayController! , shouldReloadTableForSearchString searchString: String!) -> Bool{
-        self.filterContentForRearchText(searchString)
-        return true
-    }
-    
-    
-    func filterContentForRearchText(searchText:String){
-        self.searchColors = self.colors.filter({(colors:String)-> Bool in
-            let stringMatch = colors.rangeOfString(searchText)
-            return stringMatch != nil
-        })
-        print(self.colors)
+        self.searchTableView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
