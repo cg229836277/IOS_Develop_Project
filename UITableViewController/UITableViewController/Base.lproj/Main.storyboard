@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="J4O-Fa-J78">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--拍照-->
+        <scene sceneID="Osk-fH-CY5">
+            <objects>
+                <viewController id="IdL-AL-q3n" customClass="ViewController2" customModule="UITableViewController" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Gl-JS-F2T"/>
+                        <viewControllerLayoutGuide type="bottom" id="gCa-l8-0MM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4ef-Cf-F5y">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="现在显示的是拍照界面" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xX2-Ny-4Dr">
+                                <rect key="frame" x="93" y="212" width="170" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="拍照" image="design_camera_pressed.9.png" id="Uvv-MX-Isz"/>
+                    <connections>
+                        <outlet property="changeTakePhotoValue" destination="xX2-Ny-4Dr" id="zFz-Hc-z2q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="auX-Zv-7gD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="628" y="-168"/>
+        </scene>
+        <!--图案-->
+        <scene sceneID="A2W-1l-TQ5">
+            <objects>
+                <viewController id="HtL-v3-hwJ" customClass="ViewController4" customModule="UITableViewController" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gqn-hb-Dfp"/>
+                        <viewControllerLayoutGuide type="bottom" id="vBH-T0-20M"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xQR-94-Qg4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="现在显示的是图案" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNA-id-FJL">
+                                <rect key="frame" x="109" y="244" width="136" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="图案" image="design_pattern_pressed.9.png" id="rA4-OO-xi4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1II-KH-PBI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="620" y="494"/>
+        </scene>
+        <!--模板-->
+        <scene sceneID="A6a-DL-Y2Z">
+            <objects>
+                <viewController id="nyA-vH-SWJ" customClass="ViewController3" customModule="UITableViewController" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qWI-Yk-N7s"/>
+                        <viewControllerLayoutGuide type="bottom" id="Coz-QI-yg0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cU0-bV-yYe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="现在显示的是模板界面" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1BH-o6-QNF">
+                                <rect key="frame" x="75" y="251" width="170" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="模板" image="design_model_pressed.9.png" id="eY8-36-gDV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="man-5J-XqV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="210" y="170"/>
+        </scene>
+        <!--背景-->
+        <scene sceneID="LnM-Ex-V6O">
+            <objects>
+                <viewController id="FyM-gy-Li5" customClass="ViewController1" customModule="UITableViewController" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6SX-je-tjg"/>
+                        <viewControllerLayoutGuide type="bottom" id="wMF-iv-t72"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NHX-XX-I0z">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="现在显示的是背景界面" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MBK-gx-38d">
+                                <rect key="frame" x="75" y="199" width="170" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="背景" image="design_background_pressed.9.png" selectedImage="view_home_couple_normal.9.png" id="Zin-eM-Jar"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PAc-Xk-D6R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="260" y="-573"/>
+        </scene>
+        <!--chuck chan-->
+        <scene sceneID="tky-D0-ZnG">
+            <objects>
+                <tabBarController title="chuck chan" id="J4O-Fa-J78" customClass="ViewController" customModule="UITableViewController" customModuleProvider="target" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="EHw-pN-L7b">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="FyM-gy-Li5" kind="relationship" relationship="viewControllers" id="oUY-4w-ZaR"/>
+                        <segue destination="IdL-AL-q3n" kind="relationship" relationship="viewControllers" id="Ji9-UR-6WQ"/>
+                        <segue destination="nyA-vH-SWJ" kind="relationship" relationship="viewControllers" id="dV2-YX-dxi"/>
+                        <segue destination="HtL-v3-hwJ" kind="relationship" relationship="viewControllers" id="ByM-or-bHe"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aOe-FK-raG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-420" y="98"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="design_background_pressed.9.png" width="44" height="69"/>
+        <image name="design_camera_pressed.9.png" width="44" height="69"/>
+        <image name="design_model_pressed.9.png" width="44" height="69"/>
+        <image name="design_pattern_pressed.9.png" width="44" height="69"/>
+        <image name="view_home_couple_normal.9.png" width="181" height="188"/>
+    </resources>
+</document>

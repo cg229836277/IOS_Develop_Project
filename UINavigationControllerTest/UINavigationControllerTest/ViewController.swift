@@ -8,11 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+
+
+class ViewController: UIViewController , ValueTransferDeletgate{
+    
+    var delegate:ValueTransferDeletgate?
+    @IBOutlet weak var firstButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,7 +28,12 @@ class ViewController: UIViewController {
         if segue.identifier == "chuck"{
             let destViewController = (segue.destinationViewController) as! ViewController2
             destViewController.value = "chan"
+            destViewController.delegate = self
         }
+    }
+    
+    func transferData(value: String) {
+        firstButton.setTitle(value, forState: UIControlState.Normal )
     }
     
     @IBAction func backToPre(segue:UIStoryboardSegue){

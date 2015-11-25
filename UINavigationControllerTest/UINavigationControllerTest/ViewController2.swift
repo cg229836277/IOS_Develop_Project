@@ -8,20 +8,24 @@
 
 import UIKit
 
+protocol ValueTransferDeletgate{
+    func transferData(value:String)
+}
+
 class ViewController2: UIViewController {
 
     @IBOutlet weak var destButton: UIButton!
     var value:String?
+    var delegate:ValueTransferDeletgate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         destButton.setTitle(value, forState: UIControlState.Normal)
-        // Do any additional setup after loading the view.
+        delegate?.transferData("反向传值")
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     /*
