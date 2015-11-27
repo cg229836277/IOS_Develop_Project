@@ -11,11 +11,10 @@ import UIKit
 class ViewController: UITabBarController ,UITabBarControllerDelegate{
     
     var count = 0
-
     override func viewDidLoad() {
         super.viewDidLoad()
         //let currentController = self.tabBarController
-        tabBarController?.delegate = self
+        self.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
