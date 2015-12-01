@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>UISplitViewController.xcscheme</key>
+		<key>UISplitViewControllerTest.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>DB4D25391C0B2AAE0054FAE7</key>
+		<key>13FB2FE51C0D78BE00F99C50</key>
 		<dict>
 			<key>primary</key>
 			<true/>

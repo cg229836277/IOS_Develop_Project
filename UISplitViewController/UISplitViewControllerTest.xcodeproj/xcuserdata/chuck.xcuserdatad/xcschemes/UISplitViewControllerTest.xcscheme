@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DB4D25391C0B2AAE0054FAE7"
-               BuildableName = "UISplitViewController.app"
-               BlueprintName = "UISplitViewController"
-               ReferencedContainer = "container:UISplitViewController.xcodeproj">
+               BlueprintIdentifier = "13FB2FE51C0D78BE00F99C50"
+               BuildableName = "UISplitViewControllerTest.app"
+               BlueprintName = "UISplitViewControllerTest"
+               ReferencedContainer = "container:UISplitViewControllerTest.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DB4D25391C0B2AAE0054FAE7"
-            BuildableName = "UISplitViewController.app"
-            BlueprintName = "UISplitViewController"
-            ReferencedContainer = "container:UISplitViewController.xcodeproj">
+            BlueprintIdentifier = "13FB2FE51C0D78BE00F99C50"
+            BuildableName = "UISplitViewControllerTest.app"
+            BlueprintName = "UISplitViewControllerTest"
+            ReferencedContainer = "container:UISplitViewControllerTest.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DB4D25391C0B2AAE0054FAE7"
-            BuildableName = "UISplitViewController.app"
-            BlueprintName = "UISplitViewController"
-            ReferencedContainer = "container:UISplitViewController.xcodeproj">
+            BlueprintIdentifier = "13FB2FE51C0D78BE00F99C50"
+            BuildableName = "UISplitViewControllerTest.app"
+            BlueprintName = "UISplitViewControllerTest"
+            ReferencedContainer = "container:UISplitViewControllerTest.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DB4D25391C0B2AAE0054FAE7"
-            BuildableName = "UISplitViewController.app"
-            BlueprintName = "UISplitViewController"
-            ReferencedContainer = "container:UISplitViewController.xcodeproj">
+            BlueprintIdentifier = "13FB2FE51C0D78BE00F99C50"
+            BuildableName = "UISplitViewControllerTest.app"
+            BlueprintName = "UISplitViewControllerTest"
+            ReferencedContainer = "container:UISplitViewControllerTest.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

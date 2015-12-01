@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  UISplitViewController
+//  UISplitViewControllerTest
 //
-//  Created by chuck chan on 15/11/29.
-//  Copyright © 2015年 chuck chan. All rights reserved.
+//  Created by chuck on 15/11/30.
+//  Copyright © 2015年 chuck. All rights reserved.
 //
 
 import UIKit
