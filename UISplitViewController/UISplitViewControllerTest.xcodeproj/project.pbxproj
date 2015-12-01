@@ -14,6 +14,10 @@
 		13FB2FF41C0D78BF00F99C50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13FB2FF21C0D78BF00F99C50 /* LaunchScreen.storyboard */; };
 		13FB2FFC1C0D7EC700F99C50 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FB2FFB1C0D7EC700F99C50 /* SplitViewController.swift */; };
 		13FB2FFE1C0D7F2100F99C50 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FB2FFD1C0D7F2100F99C50 /* ListTableViewController.swift */; };
+		DB41C63A1C0DCB0200A4CC30 /* 1.JPG in Resources */ = {isa = PBXBuildFile; fileRef = DB41C6361C0DCB0200A4CC30 /* 1.JPG */; };
+		DB41C63B1C0DCB0200A4CC30 /* 2.JPG in Resources */ = {isa = PBXBuildFile; fileRef = DB41C6371C0DCB0200A4CC30 /* 2.JPG */; };
+		DB41C63C1C0DCB0200A4CC30 /* 3.JPG in Resources */ = {isa = PBXBuildFile; fileRef = DB41C6381C0DCB0200A4CC30 /* 3.JPG */; };
+		DB41C63D1C0DCB0200A4CC30 /* 4.JPG in Resources */ = {isa = PBXBuildFile; fileRef = DB41C6391C0DCB0200A4CC30 /* 4.JPG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		13FB2FF51C0D78BF00F99C50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13FB2FFB1C0D7EC700F99C50 /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
 		13FB2FFD1C0D7F2100F99C50 /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		DB41C6361C0DCB0200A4CC30 /* 1.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 1.JPG; path = ../../Users/chuckchan/Desktop/images/1.JPG; sourceTree = "<group>"; };
+		DB41C6371C0DCB0200A4CC30 /* 2.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 2.JPG; path = ../../Users/chuckchan/Desktop/images/2.JPG; sourceTree = "<group>"; };
+		DB41C6381C0DCB0200A4CC30 /* 3.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 3.JPG; path = ../../Users/chuckchan/Desktop/images/3.JPG; sourceTree = "<group>"; };
+		DB41C6391C0DCB0200A4CC30 /* 4.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 4.JPG; path = ../../Users/chuckchan/Desktop/images/4.JPG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +50,7 @@
 		13FB2FDD1C0D78BE00F99C50 = {
 			isa = PBXGroup;
 			children = (
+				DB41C6351C0DCAC200A4CC30 /* Images */,
 				13FB2FE81C0D78BE00F99C50 /* UISplitViewControllerTest */,
 				13FB2FE71C0D78BE00F99C50 /* Products */,
 			);
@@ -68,6 +77,17 @@
 				13FB2FF51C0D78BF00F99C50 /* Info.plist */,
 			);
 			path = UISplitViewControllerTest;
+			sourceTree = "<group>";
+		};
+		DB41C6351C0DCAC200A4CC30 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				DB41C6361C0DCB0200A4CC30 /* 1.JPG */,
+				DB41C6371C0DCB0200A4CC30 /* 2.JPG */,
+				DB41C6381C0DCB0200A4CC30 /* 3.JPG */,
+				DB41C6391C0DCB0200A4CC30 /* 4.JPG */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,7 +148,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB41C63B1C0DCB0200A4CC30 /* 2.JPG in Resources */,
 				13FB2FF41C0D78BF00F99C50 /* LaunchScreen.storyboard in Resources */,
+				DB41C63A1C0DCB0200A4CC30 /* 1.JPG in Resources */,
+				DB41C63C1C0DCB0200A4CC30 /* 3.JPG in Resources */,
+				DB41C63D1C0DCB0200A4CC30 /* 4.JPG in Resources */,
 				13FB2FF11C0D78BF00F99C50 /* Assets.xcassets in Resources */,
 				13FB2FEF1C0D78BF00F99C50 /* Main.storyboard in Resources */,
 			);
@@ -296,6 +320,7 @@
 				13FB2FFA1C0D78BF00F99C50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
