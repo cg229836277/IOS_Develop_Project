@@ -10,14 +10,31 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var cyanLabel: UILabel!
+    
+    @IBOutlet weak var purpleLabel: UILabel!
+    
+    @IBOutlet weak var blueLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func willRotateToInterfaceOrientation(toInterfaceOrientation: UIInterfaceOrientation, duration: NSTimeInterval) {
+        super.willRotateToInterfaceOrientation(toInterfaceOrientation, duration: duration)
+        if toInterfaceOrientation == UIInterfaceOrientation.LandscapeRight || toInterfaceOrientation == UIInterfaceOrientation.LandscapeLeft{
+            self.view.backgroundColor = UIColor.cyanColor()
+            cyanLabel.text = "现在是横屏"
+            
+        }else{
+            cyanLabel.text = "现在是竖屏"
+            self.view.backgroundColor = UIColor.whiteColor()
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 }
 

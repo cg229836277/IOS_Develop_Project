@@ -7,25 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DB3ECAB81C0DD0B00040004F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3ECAB71C0DD0B00040004F /* AppDelegate.swift */; };
-		DB3ECABA1C0DD0B00040004F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3ECAB91C0DD0B00040004F /* ViewController.swift */; };
-		DB3ECABD1C0DD0B00040004F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB3ECABB1C0DD0B00040004F /* Main.storyboard */; };
-		DB3ECABF1C0DD0B00040004F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB3ECABE1C0DD0B00040004F /* Assets.xcassets */; };
-		DB3ECAC21C0DD0B00040004F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB3ECAC01C0DD0B00040004F /* LaunchScreen.storyboard */; };
+		DB38939C1C0F236200B197D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB38939B1C0F236200B197D6 /* AppDelegate.swift */; };
+		DB38939E1C0F236200B197D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB38939D1C0F236200B197D6 /* ViewController.swift */; };
+		DB3893A11C0F236200B197D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB38939F1C0F236200B197D6 /* Main.storyboard */; };
+		DB3893A31C0F236200B197D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB3893A21C0F236200B197D6 /* Assets.xcassets */; };
+		DB3893A61C0F236200B197D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB3893A41C0F236200B197D6 /* LaunchScreen.storyboard */; };
+		DB3893AE1C0F2D7A00B197D6 /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3893AD1C0F2D7A00B197D6 /* DrawView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DB3ECAB41C0DD0B00040004F /* UIAutoResizeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIAutoResizeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB3ECAB71C0DD0B00040004F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DB3ECAB91C0DD0B00040004F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DB3ECABC1C0DD0B00040004F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DB3ECABE1C0DD0B00040004F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DB3ECAC11C0DD0B00040004F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		DB3ECAC31C0DD0B00040004F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB3893981C0F236200B197D6 /* UIDrawLineTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIDrawLineTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB38939B1C0F236200B197D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DB38939D1C0F236200B197D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DB3893A01C0F236200B197D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DB3893A21C0F236200B197D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB3893A51C0F236200B197D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DB3893A71C0F236200B197D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB3893AD1C0F2D7A00B197D6 /* DrawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DB3ECAB11C0DD0B00040004F /* Frameworks */ = {
+		DB3893951C0F236200B197D6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,72 +37,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DB3ECAAB1C0DD0B00040004F = {
+		DB38938F1C0F236200B197D6 = {
 			isa = PBXGroup;
 			children = (
-				DB3ECAB61C0DD0B00040004F /* UIAutoResizeTest */,
-				DB3ECAB51C0DD0B00040004F /* Products */,
+				DB38939A1C0F236200B197D6 /* UIDrawLineTest */,
+				DB3893991C0F236200B197D6 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		DB3ECAB51C0DD0B00040004F /* Products */ = {
+		DB3893991C0F236200B197D6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DB3ECAB41C0DD0B00040004F /* UIAutoResizeTest.app */,
+				DB3893981C0F236200B197D6 /* UIDrawLineTest.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DB3ECAB61C0DD0B00040004F /* UIAutoResizeTest */ = {
+		DB38939A1C0F236200B197D6 /* UIDrawLineTest */ = {
 			isa = PBXGroup;
 			children = (
-				DB3ECAB71C0DD0B00040004F /* AppDelegate.swift */,
-				DB3ECAB91C0DD0B00040004F /* ViewController.swift */,
-				DB3ECABB1C0DD0B00040004F /* Main.storyboard */,
-				DB3ECABE1C0DD0B00040004F /* Assets.xcassets */,
-				DB3ECAC01C0DD0B00040004F /* LaunchScreen.storyboard */,
-				DB3ECAC31C0DD0B00040004F /* Info.plist */,
+				DB38939B1C0F236200B197D6 /* AppDelegate.swift */,
+				DB38939D1C0F236200B197D6 /* ViewController.swift */,
+				DB38939F1C0F236200B197D6 /* Main.storyboard */,
+				DB3893A21C0F236200B197D6 /* Assets.xcassets */,
+				DB3893A41C0F236200B197D6 /* LaunchScreen.storyboard */,
+				DB3893A71C0F236200B197D6 /* Info.plist */,
+				DB3893AD1C0F2D7A00B197D6 /* DrawView.swift */,
 			);
-			path = UIAutoResizeTest;
+			path = UIDrawLineTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DB3ECAB31C0DD0B00040004F /* UIAutoResizeTest */ = {
+		DB3893971C0F236200B197D6 /* UIDrawLineTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DB3ECAC61C0DD0B00040004F /* Build configuration list for PBXNativeTarget "UIAutoResizeTest" */;
+			buildConfigurationList = DB3893AA1C0F236200B197D6 /* Build configuration list for PBXNativeTarget "UIDrawLineTest" */;
 			buildPhases = (
-				DB3ECAB01C0DD0B00040004F /* Sources */,
-				DB3ECAB11C0DD0B00040004F /* Frameworks */,
-				DB3ECAB21C0DD0B00040004F /* Resources */,
+				DB3893941C0F236200B197D6 /* Sources */,
+				DB3893951C0F236200B197D6 /* Frameworks */,
+				DB3893961C0F236200B197D6 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = UIAutoResizeTest;
-			productName = UIAutoResizeTest;
-			productReference = DB3ECAB41C0DD0B00040004F /* UIAutoResizeTest.app */;
+			name = UIDrawLineTest;
+			productName = UIDrawLineTest;
+			productReference = DB3893981C0F236200B197D6 /* UIDrawLineTest.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		DB3ECAAC1C0DD0B00040004F /* Project object */ = {
+		DB3893901C0F236200B197D6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "chuck chan";
 				TargetAttributes = {
-					DB3ECAB31C0DD0B00040004F = {
+					DB3893971C0F236200B197D6 = {
 						CreatedOnToolsVersion = 7.1;
 						DevelopmentTeam = 328A3KDV4A;
 					};
 				};
 			};
-			buildConfigurationList = DB3ECAAF1C0DD0B00040004F /* Build configuration list for PBXProject "UIAutoResizeTest" */;
+			buildConfigurationList = DB3893931C0F236200B197D6 /* Build configuration list for PBXProject "UIDrawLineTest" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -108,54 +111,55 @@
 				en,
 				Base,
 			);
-			mainGroup = DB3ECAAB1C0DD0B00040004F;
-			productRefGroup = DB3ECAB51C0DD0B00040004F /* Products */;
+			mainGroup = DB38938F1C0F236200B197D6;
+			productRefGroup = DB3893991C0F236200B197D6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DB3ECAB31C0DD0B00040004F /* UIAutoResizeTest */,
+				DB3893971C0F236200B197D6 /* UIDrawLineTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DB3ECAB21C0DD0B00040004F /* Resources */ = {
+		DB3893961C0F236200B197D6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB3ECAC21C0DD0B00040004F /* LaunchScreen.storyboard in Resources */,
-				DB3ECABF1C0DD0B00040004F /* Assets.xcassets in Resources */,
-				DB3ECABD1C0DD0B00040004F /* Main.storyboard in Resources */,
+				DB3893A61C0F236200B197D6 /* LaunchScreen.storyboard in Resources */,
+				DB3893A31C0F236200B197D6 /* Assets.xcassets in Resources */,
+				DB3893A11C0F236200B197D6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DB3ECAB01C0DD0B00040004F /* Sources */ = {
+		DB3893941C0F236200B197D6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB3ECABA1C0DD0B00040004F /* ViewController.swift in Sources */,
-				DB3ECAB81C0DD0B00040004F /* AppDelegate.swift in Sources */,
+				DB38939E1C0F236200B197D6 /* ViewController.swift in Sources */,
+				DB38939C1C0F236200B197D6 /* AppDelegate.swift in Sources */,
+				DB3893AE1C0F2D7A00B197D6 /* DrawView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DB3ECABB1C0DD0B00040004F /* Main.storyboard */ = {
+		DB38939F1C0F236200B197D6 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DB3ECABC1C0DD0B00040004F /* Base */,
+				DB3893A01C0F236200B197D6 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		DB3ECAC01C0DD0B00040004F /* LaunchScreen.storyboard */ = {
+		DB3893A41C0F236200B197D6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DB3ECAC11C0DD0B00040004F /* Base */,
+				DB3893A51C0F236200B197D6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -163,7 +167,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		DB3ECAC41C0DD0B00040004F /* Debug */ = {
+		DB3893A81C0F236200B197D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -208,7 +212,7 @@
 			};
 			name = Debug;
 		};
-		DB3ECAC51C0DD0B00040004F /* Release */ = {
+		DB3893A91C0F236200B197D6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -246,24 +250,24 @@
 			};
 			name = Release;
 		};
-		DB3ECAC71C0DD0B00040004F /* Debug */ = {
+		DB3893AB1C0F236200B197D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = UIAutoResizeTest/Info.plist;
+				INFOPLIST_FILE = UIDrawLineTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.chuck.UIAutoResizeTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chuck.UIDrawLineTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		DB3ECAC81C0DD0B00040004F /* Release */ = {
+		DB3893AC1C0F236200B197D6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = UIAutoResizeTest/Info.plist;
+				INFOPLIST_FILE = UIDrawLineTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.chuck.UIAutoResizeTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chuck.UIDrawLineTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -271,25 +275,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DB3ECAAF1C0DD0B00040004F /* Build configuration list for PBXProject "UIAutoResizeTest" */ = {
+		DB3893931C0F236200B197D6 /* Build configuration list for PBXProject "UIDrawLineTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DB3ECAC41C0DD0B00040004F /* Debug */,
-				DB3ECAC51C0DD0B00040004F /* Release */,
+				DB3893A81C0F236200B197D6 /* Debug */,
+				DB3893A91C0F236200B197D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DB3ECAC61C0DD0B00040004F /* Build configuration list for PBXNativeTarget "UIAutoResizeTest" */ = {
+		DB3893AA1C0F236200B197D6 /* Build configuration list for PBXNativeTarget "UIDrawLineTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DB3ECAC71C0DD0B00040004F /* Debug */,
-				DB3ECAC81C0DD0B00040004F /* Release */,
+				DB3893AB1C0F236200B197D6 /* Debug */,
+				DB3893AC1C0F236200B197D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = DB3ECAAC1C0DD0B00040004F /* Project object */;
+	rootObject = DB3893901C0F236200B197D6 /* Project object */;
 }
