@@ -24,6 +24,10 @@
                                     <action selector="showAnimationClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ztm-dt-x5C"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x3w-O4-GBl">
+                                <rect key="frame" x="32" y="301" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.35220947968110283" green="0.77637528041652071" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b2e-5k-ZSy">
                                 <rect key="frame" x="32" y="147" width="240" height="128"/>
                                 <color key="backgroundColor" red="1" green="0.49656169392698879" blue="0.79636589495049925" alpha="1" colorSpace="calibratedRGB"/>
@@ -33,6 +37,7 @@
                     </view>
                     <connections>
                         <outlet property="excuteAnimationView" destination="b2e-5k-ZSy" id="AcL-GS-zmZ"/>
+                        <outlet property="secondView" destination="x3w-O4-GBl" id="RYd-yq-P4d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
