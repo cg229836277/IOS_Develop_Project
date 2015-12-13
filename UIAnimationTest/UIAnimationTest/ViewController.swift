@@ -33,7 +33,8 @@ class ViewController: UIViewController {
         //moveToAPlace()
         //moveToPlaceWithOptions()
         //begainAndCommitAnimation()
-        animationWithViewTransection()
+        //animationWithViewTransection()
+        replaceView()
     }
     
     func  backToOrigin(){
@@ -93,6 +94,15 @@ class ViewController: UIViewController {
                 self.firstSubView.frame.origin.x += 80
             }) { (chuck) -> Void in
                 print("animate ainished")
+        }
+    }
+    //替换另外一个视图
+    func replaceView(){
+        let view = UIView(frame: CGRect(x: 30, y: 350, width: 240, height: 60))
+        view.backgroundColor = UIColor.redColor()
+        
+        UIView.transitionFromView(secondView, toView: view, duration: 2, options: [UIViewAnimationOptions.TransitionCurlUp , UIViewAnimationOptions.AllowAnimatedContent]) { (chuck) -> Void in
+            print("animation finished")
         }
     }
 
