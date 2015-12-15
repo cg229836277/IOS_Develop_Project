@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SoundPlayTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BV9-Sq-fQz">
+                                <rect key="frame" x="96" y="108" width="128" height="30"/>
+                                <state key="normal" title="开始播放系统提醒"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zo1-P3-38k">
+                                <rect key="frame" x="111" y="200" width="98" height="30"/>
+                                <state key="normal" title="开始播放震动"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QmR-PN-HJV">
+                                <rect key="frame" x="126" y="40" width="68" height="30"/>
+                                <state key="normal" title="开始播放"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="BV9-Sq-fQz" secondAttribute="trailing" constant="80" id="9Rn-Ft-2nf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Zo1-P3-38k" secondAttribute="trailing" constant="95" id="HKw-Kc-6R7"/>
+                            <constraint firstItem="Zo1-P3-38k" firstAttribute="top" secondItem="BV9-Sq-fQz" secondAttribute="bottom" constant="62" id="Yi3-gZ-sCH"/>
+                            <constraint firstItem="BV9-Sq-fQz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="80" id="ir9-yY-Sf2"/>
+                            <constraint firstItem="BV9-Sq-fQz" firstAttribute="top" secondItem="QmR-PN-HJV" secondAttribute="bottom" constant="38" id="kem-n5-VIh"/>
+                            <constraint firstItem="Zo1-P3-38k" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="95" id="lz3-N5-jL1"/>
+                            <constraint firstItem="QmR-PN-HJV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="sf9-w7-i5g"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QmR-PN-HJV" secondAttribute="trailing" constant="110" id="wK3-68-VrB"/>
+                            <constraint firstItem="QmR-PN-HJV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="110" id="z8k-qi-VvB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="startPlayAlertSound" destination="BV9-Sq-fQz" id="GM7-7D-oWh"/>
+                        <outlet property="startPlaySound" destination="QmR-PN-HJV" id="8dK-Km-qMV"/>
+                        <outlet property="startPlayVibration" destination="Zo1-P3-38k" id="Wan-4h-27y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26" y="318"/>
+        </scene>
+    </scenes>
+</document>
