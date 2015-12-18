@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  SoundPlayTest
+//  AVMediaTest
 //
-//  Created by chuck chan on 15/12/15.
+//  Created by chuck chan on 15/12/16.
 //  Copyright © 2015年 chuck chan. All rights reserved.
 //
 

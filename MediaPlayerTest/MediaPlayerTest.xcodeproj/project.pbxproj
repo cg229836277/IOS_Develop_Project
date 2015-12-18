@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB48A38B1C218FE600854428 /* Daniel - Free Loop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DB48A3891C218FE600854428 /* Daniel - Free Loop.mp3 */; };
+		DB48A38C1C218FE600854428 /* Leona Lewis - Footprint In The Sand.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DB48A38A1C218FE600854428 /* Leona Lewis - Footprint In The Sand.mp3 */; };
 		DB59F5A61C20510B006685EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB59F5A51C20510B006685EF /* AppDelegate.swift */; };
 		DB59F5A81C20510B006685EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB59F5A71C20510B006685EF /* ViewController.swift */; };
 		DB59F5AB1C20510B006685EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB59F5A91C20510B006685EF /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB48A3891C218FE600854428 /* Daniel - Free Loop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Daniel - Free Loop.mp3"; path = "../../../Volumes/VMware Shared Folders/appleShare/Daniel - Free Loop.mp3"; sourceTree = "<group>"; };
+		DB48A38A1C218FE600854428 /* Leona Lewis - Footprint In The Sand.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Leona Lewis - Footprint In The Sand.mp3"; path = "../../../Volumes/VMware Shared Folders/appleShare/Leona Lewis - Footprint In The Sand.mp3"; sourceTree = "<group>"; };
 		DB59F5A21C20510B006685EF /* MediaPlayerTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediaPlayerTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB59F5A51C20510B006685EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB59F5A71C20510B006685EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +60,8 @@
 		DB59F5A41C20510B006685EF /* MediaPlayerTest */ = {
 			isa = PBXGroup;
 			children = (
+				DB48A3891C218FE600854428 /* Daniel - Free Loop.mp3 */,
+				DB48A38A1C218FE600854428 /* Leona Lewis - Footprint In The Sand.mp3 */,
 				DBE839501C2052B800C063B5 /* UIKit.mp4 */,
 				DB59F5A51C20510B006685EF /* AppDelegate.swift */,
 				DB59F5A71C20510B006685EF /* ViewController.swift */,
@@ -130,6 +136,8 @@
 				DB59F5AD1C20510B006685EF /* Assets.xcassets in Resources */,
 				DBE839511C2052B800C063B5 /* UIKit.mp4 in Resources */,
 				DB59F5AB1C20510B006685EF /* Main.storyboard in Resources */,
+				DB48A38C1C218FE600854428 /* Leona Lewis - Footprint In The Sand.mp3 in Resources */,
+				DB48A38B1C218FE600854428 /* Daniel - Free Loop.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

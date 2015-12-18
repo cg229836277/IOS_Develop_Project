@@ -19,34 +19,54 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xqu-kx-Whp">
-                                <rect key="frame" x="45" y="40" width="219" height="30"/>
+                                <rect key="frame" x="140" y="90" width="68" height="30"/>
                                 <state key="normal" title="开始播放"/>
                                 <connections>
                                     <action selector="startPlayVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uWv-wf-PkI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ij-fZ-bKO">
-                                <rect key="frame" x="135" y="90" width="38" height="30"/>
+                                <rect key="frame" x="155" y="140" width="38" height="30"/>
                                 <state key="normal" title="暂停"/>
                                 <connections>
                                     <action selector="pausePlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dca-6R-uLK"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ifs-m1-f5V">
+                                <rect key="frame" x="117" y="190" width="114" height="30"/>
+                                <state key="normal" title="多媒体选择视图"/>
+                                <connections>
+                                    <action selector="startMediaPickerView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HUs-eW-i77"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C1E-0Y-VKD">
+                                <rect key="frame" x="140" y="40" width="68" height="30"/>
+                                <state key="normal" title="播放音乐"/>
+                                <connections>
+                                    <action selector="startPlaySongs:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8jH-Sy-SNI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Xqu-kx-Whp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="29" id="1YH-Ot-YOd"/>
-                            <constraint firstItem="4ij-fZ-bKO" firstAttribute="top" secondItem="Xqu-kx-Whp" secondAttribute="bottom" constant="20" id="73O-2z-biE"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Xqu-kx-Whp" secondAttribute="trailing" constant="40" id="Tuw-Ne-aHX"/>
-                            <constraint firstItem="Xqu-kx-Whp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="cwR-tI-pUX"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="4ij-fZ-bKO" secondAttribute="trailing" constant="131" id="pOo-ii-vyb"/>
-                            <constraint firstItem="4ij-fZ-bKO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="119" id="qDN-Sw-oio"/>
+                            <constraint firstItem="4ij-fZ-bKO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="139" id="9To-GF-7KD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Xqu-kx-Whp" secondAttribute="trailing" constant="96" id="HD5-5r-djM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4ij-fZ-bKO" secondAttribute="trailing" constant="111" id="L9h-1K-a7X"/>
+                            <constraint firstItem="4ij-fZ-bKO" firstAttribute="top" secondItem="Xqu-kx-Whp" secondAttribute="bottom" constant="20" id="Tdc-8c-YFG"/>
+                            <constraint firstItem="ifs-m1-f5V" firstAttribute="top" secondItem="4ij-fZ-bKO" secondAttribute="bottom" constant="20" id="Y06-1A-8MT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="C1E-0Y-VKD" secondAttribute="trailing" constant="96" id="dIF-YP-IXc"/>
+                            <constraint firstItem="ifs-m1-f5V" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="101" id="dko-fy-AZU"/>
+                            <constraint firstItem="Xqu-kx-Whp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="124" id="jCV-sB-j4Q"/>
+                            <constraint firstItem="Xqu-kx-Whp" firstAttribute="top" secondItem="C1E-0Y-VKD" secondAttribute="bottom" constant="20" id="k59-cH-3xu"/>
+                            <constraint firstItem="C1E-0Y-VKD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="lLm-od-R3n"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ifs-m1-f5V" secondAttribute="trailing" constant="73" id="ngq-7j-DON"/>
+                            <constraint firstItem="C1E-0Y-VKD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="124" id="ves-fN-bJW"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="145" y="324"/>
+            <point key="canvasLocation" x="197" y="308"/>
         </scene>
     </scenes>
 </document>
