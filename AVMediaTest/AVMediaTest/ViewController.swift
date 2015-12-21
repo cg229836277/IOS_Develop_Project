@@ -15,13 +15,14 @@ class ViewController:UIViewController , AVAudioPlayerDelegate , AVAudioRecorderD
     var recorderFile:NSURL!
     var soundRecorder:AVAudioRecorder!
     var musicPlayer:AVAudioPlayer!
+    var recordPlayer:AVAudioPlayer!
     
     let recordSettings = [
-        AVSampleRateKey : NSNumber(float: Float(44100.0)),
-        AVFormatIDKey : NSNumber(int: Int32(kAudioFormatAppleLossless)),
-        AVNumberOfChannelsKey : NSNumber(int: 1),
-        AVEncoderAudioQualityKey : NSNumber(int: Int32(AVAudioQuality.High.rawValue)),
-        AVEncoderBitRateKey : NSNumber(int: Int32(320000))
+        AVSampleRateKey : 44100.0,
+        AVFormatIDKey : NSNumber(unsignedInt : kAudioFormatMPEG4AAC),
+        AVNumberOfChannelsKey : 2,
+        AVEncoderAudioQualityKey : AVAudioQuality.Max.rawValue,
+        AVEncoderBitRateKey : 320000
     ]
     
     override func viewDidLoad() {
@@ -34,19 +35,21 @@ class ViewController:UIViewController , AVAudioPlayerDelegate , AVAudioRecorderD
             sourceFile = NSBundle.mainBundle().pathForResource("Free Loop", ofType: "mp3")
             //录音产生的文件放在临时文件夹
             recorderFile = NSURL.fileURLWithPath(NSTemporaryDirectory().stringByAppendingString("chuck.caf"))
-        
-            try musicPlayer = AVAudioPlayer(contentsOfURL: NSURL.fileURLWithPath(self.sourceFile))
             
             try soundRecorder = AVAudioRecorder(URL: recorderFile, settings: recordSettings)
+            try musicPlayer = AVAudioPlayer(contentsOfURL: NSURL.fileURLWithPath(self.sourceFile))
+            
+            try recordPlayer = AVAudioPlayer(contentsOfURL: recorderFile)
         
             musicPlayer.delegate = self
             soundRecorder.delegate = self
+            //recordPlayer.delegate = self
         }catch{
             print("occur error")
         }
     }
     
-    @IBAction func startPlayMusic(sender: UIButton) {
+    @IBAction func startPlayMusic(sender: UIButton){
         musicPlayer.play()
     }
     
@@ -70,6 +73,19 @@ class ViewController:UIViewController , AVAudioPlayerDelegate , AVAudioRecorderD
     @IBAction func stopRecord(sender: UIButton) {
         soundRecorder.stop()
     }
+    
+    @IBAction func startPlayRecord(sender: UIButton){
+        if recordPlayer.playing{
+            print("is palying now")
+            recordPlayer.pause()
+            sender.titleLabel?.text = "开始"
+        }else{
+            print("is not palying now")
+            recordPlayer.play()
+            sender.titleLabel?.text = "暂停"
+        }
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

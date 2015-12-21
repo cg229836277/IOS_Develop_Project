@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ouK-N8-NQe">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ImagePickerTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JSI-XW-ajD">
+                                <rect key="frame" x="36" y="90" width="252" height="463"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1o8-7Y-SZk">
+                                <rect key="frame" x="124" y="40" width="76" height="30"/>
+                                <state key="normal" title="选择照片 "/>
+                                <connections>
+                                    <action selector="choosePictures:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JC7-6f-xcO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JSI-XW-ajD" secondAttribute="bottom" constant="15" id="1WK-zL-U5k"/>
+                            <constraint firstItem="1o8-7Y-SZk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="ExF-zY-k7a"/>
+                            <constraint firstItem="1o8-7Y-SZk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="108" id="FOZ-cL-hks"/>
+                            <constraint firstItem="JSI-XW-ajD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="K4a-Ld-Hs8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1o8-7Y-SZk" secondAttribute="trailing" constant="104" id="Q43-SA-Pak"/>
+                            <constraint firstItem="JSI-XW-ajD" firstAttribute="top" secondItem="1o8-7Y-SZk" secondAttribute="bottom" constant="20" id="Zkl-R3-Pfe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JSI-XW-ajD" secondAttribute="trailing" constant="16" id="kS0-mv-Jtr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hXJ-Ox-fzh"/>
+                    <connections>
+                        <outlet property="setChooseImage" destination="JSI-XW-ajD" id="Dhu-pV-csg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="918" y="379"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cVO-qB-Gut">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ouK-N8-NQe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bas-wI-puG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="jO3-52-adE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rh5-Pc-FII" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="386" y="379"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  MediaPlayerTest
+//  ImagePickerTest
 //
-//  Created by chuck chan on 15/12/15.
+//  Created by chuck chan on 15/12/21.
 //  Copyright © 2015年 chuck chan. All rights reserved.
 //
 

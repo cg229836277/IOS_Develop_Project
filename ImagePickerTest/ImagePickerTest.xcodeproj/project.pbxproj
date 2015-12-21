@@ -7,27 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DB48A39A1C21997C00854428 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB48A3991C21997C00854428 /* AppDelegate.swift */; };
-		DB48A39C1C21997C00854428 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB48A39B1C21997C00854428 /* ViewController.swift */; };
-		DB48A39F1C21997C00854428 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB48A39D1C21997C00854428 /* Main.storyboard */; };
-		DB48A3A11C21997C00854428 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB48A3A01C21997C00854428 /* Assets.xcassets */; };
-		DB48A3A41C21997C00854428 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB48A3A21C21997C00854428 /* LaunchScreen.storyboard */; };
-		DB4CD55B1C24455900B85B9A /* Free Loop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DB4CD55A1C24455900B85B9A /* Free Loop.mp3 */; };
+		DB60FC471C28328300439204 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB60FC461C28328300439204 /* AppDelegate.swift */; };
+		DB60FC491C28328300439204 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB60FC481C28328300439204 /* ViewController.swift */; };
+		DB60FC4C1C28328300439204 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB60FC4A1C28328300439204 /* Main.storyboard */; };
+		DB60FC4E1C28328300439204 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB60FC4D1C28328300439204 /* Assets.xcassets */; };
+		DB60FC511C28328300439204 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB60FC4F1C28328300439204 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DB48A3961C21997C00854428 /* AVMediaTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVMediaTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB48A3991C21997C00854428 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DB48A39B1C21997C00854428 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DB48A39E1C21997C00854428 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DB48A3A01C21997C00854428 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DB48A3A31C21997C00854428 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		DB48A3A51C21997C00854428 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DB4CD55A1C24455900B85B9A /* Free Loop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Free Loop.mp3"; path = "../../Volumes/VMware Shared Folders/appleShare/Free Loop.mp3"; sourceTree = "<group>"; };
+		DB60FC431C28328300439204 /* ImagePickerTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImagePickerTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB60FC461C28328300439204 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DB60FC481C28328300439204 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DB60FC4B1C28328300439204 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DB60FC4D1C28328300439204 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB60FC501C28328300439204 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DB60FC521C28328300439204 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DB48A3931C21997C00854428 /* Frameworks */ = {
+		DB60FC401C28328300439204 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,73 +35,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DB48A38D1C21997C00854428 = {
+		DB60FC3A1C28328300439204 = {
 			isa = PBXGroup;
 			children = (
-				DB4CD55A1C24455900B85B9A /* Free Loop.mp3 */,
-				DB48A3981C21997C00854428 /* AVMediaTest */,
-				DB48A3971C21997C00854428 /* Products */,
+				DB60FC451C28328300439204 /* ImagePickerTest */,
+				DB60FC441C28328300439204 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		DB48A3971C21997C00854428 /* Products */ = {
+		DB60FC441C28328300439204 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DB48A3961C21997C00854428 /* AVMediaTest.app */,
+				DB60FC431C28328300439204 /* ImagePickerTest.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DB48A3981C21997C00854428 /* AVMediaTest */ = {
+		DB60FC451C28328300439204 /* ImagePickerTest */ = {
 			isa = PBXGroup;
 			children = (
-				DB48A3991C21997C00854428 /* AppDelegate.swift */,
-				DB48A39B1C21997C00854428 /* ViewController.swift */,
-				DB48A39D1C21997C00854428 /* Main.storyboard */,
-				DB48A3A01C21997C00854428 /* Assets.xcassets */,
-				DB48A3A21C21997C00854428 /* LaunchScreen.storyboard */,
-				DB48A3A51C21997C00854428 /* Info.plist */,
+				DB60FC461C28328300439204 /* AppDelegate.swift */,
+				DB60FC481C28328300439204 /* ViewController.swift */,
+				DB60FC4A1C28328300439204 /* Main.storyboard */,
+				DB60FC4D1C28328300439204 /* Assets.xcassets */,
+				DB60FC4F1C28328300439204 /* LaunchScreen.storyboard */,
+				DB60FC521C28328300439204 /* Info.plist */,
 			);
-			path = AVMediaTest;
+			path = ImagePickerTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DB48A3951C21997C00854428 /* AVMediaTest */ = {
+		DB60FC421C28328300439204 /* ImagePickerTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DB48A3A81C21997C00854428 /* Build configuration list for PBXNativeTarget "AVMediaTest" */;
+			buildConfigurationList = DB60FC551C28328300439204 /* Build configuration list for PBXNativeTarget "ImagePickerTest" */;
 			buildPhases = (
-				DB48A3921C21997C00854428 /* Sources */,
-				DB48A3931C21997C00854428 /* Frameworks */,
-				DB48A3941C21997C00854428 /* Resources */,
+				DB60FC3F1C28328300439204 /* Sources */,
+				DB60FC401C28328300439204 /* Frameworks */,
+				DB60FC411C28328300439204 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = AVMediaTest;
-			productName = AVMediaTest;
-			productReference = DB48A3961C21997C00854428 /* AVMediaTest.app */;
+			name = ImagePickerTest;
+			productName = ImagePickerTest;
+			productReference = DB60FC431C28328300439204 /* ImagePickerTest.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		DB48A38E1C21997C00854428 /* Project object */ = {
+		DB60FC3B1C28328300439204 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "chuck chan";
 				TargetAttributes = {
-					DB48A3951C21997C00854428 = {
+					DB60FC421C28328300439204 = {
 						CreatedOnToolsVersion = 7.1;
 						DevelopmentTeam = 328A3KDV4A;
 					};
 				};
 			};
-			buildConfigurationList = DB48A3911C21997C00854428 /* Build configuration list for PBXProject "AVMediaTest" */;
+			buildConfigurationList = DB60FC3E1C28328300439204 /* Build configuration list for PBXProject "ImagePickerTest" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -111,55 +108,54 @@
 				en,
 				Base,
 			);
-			mainGroup = DB48A38D1C21997C00854428;
-			productRefGroup = DB48A3971C21997C00854428 /* Products */;
+			mainGroup = DB60FC3A1C28328300439204;
+			productRefGroup = DB60FC441C28328300439204 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DB48A3951C21997C00854428 /* AVMediaTest */,
+				DB60FC421C28328300439204 /* ImagePickerTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DB48A3941C21997C00854428 /* Resources */ = {
+		DB60FC411C28328300439204 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB48A3A41C21997C00854428 /* LaunchScreen.storyboard in Resources */,
-				DB48A3A11C21997C00854428 /* Assets.xcassets in Resources */,
-				DB48A39F1C21997C00854428 /* Main.storyboard in Resources */,
-				DB4CD55B1C24455900B85B9A /* Free Loop.mp3 in Resources */,
+				DB60FC511C28328300439204 /* LaunchScreen.storyboard in Resources */,
+				DB60FC4E1C28328300439204 /* Assets.xcassets in Resources */,
+				DB60FC4C1C28328300439204 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DB48A3921C21997C00854428 /* Sources */ = {
+		DB60FC3F1C28328300439204 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB48A39C1C21997C00854428 /* ViewController.swift in Sources */,
-				DB48A39A1C21997C00854428 /* AppDelegate.swift in Sources */,
+				DB60FC491C28328300439204 /* ViewController.swift in Sources */,
+				DB60FC471C28328300439204 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DB48A39D1C21997C00854428 /* Main.storyboard */ = {
+		DB60FC4A1C28328300439204 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DB48A39E1C21997C00854428 /* Base */,
+				DB60FC4B1C28328300439204 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		DB48A3A21C21997C00854428 /* LaunchScreen.storyboard */ = {
+		DB60FC4F1C28328300439204 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DB48A3A31C21997C00854428 /* Base */,
+				DB60FC501C28328300439204 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -167,7 +163,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		DB48A3A61C21997C00854428 /* Debug */ = {
+		DB60FC531C28328300439204 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -212,7 +208,7 @@
 			};
 			name = Debug;
 		};
-		DB48A3A71C21997C00854428 /* Release */ = {
+		DB60FC541C28328300439204 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -250,28 +246,26 @@
 			};
 			name = Release;
 		};
-		DB48A3A91C21997C00854428 /* Debug */ = {
+		DB60FC561C28328300439204 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = AVMediaTest/Info.plist;
+				INFOPLIST_FILE = ImagePickerTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.chuck.AVMediaTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chuck.ImagePickerTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		DB48A3AA1C21997C00854428 /* Release */ = {
+		DB60FC571C28328300439204 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = AVMediaTest/Info.plist;
+				INFOPLIST_FILE = ImagePickerTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.chuck.AVMediaTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chuck.ImagePickerTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -279,25 +273,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DB48A3911C21997C00854428 /* Build configuration list for PBXProject "AVMediaTest" */ = {
+		DB60FC3E1C28328300439204 /* Build configuration list for PBXProject "ImagePickerTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DB48A3A61C21997C00854428 /* Debug */,
-				DB48A3A71C21997C00854428 /* Release */,
+				DB60FC531C28328300439204 /* Debug */,
+				DB60FC541C28328300439204 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DB48A3A81C21997C00854428 /* Build configuration list for PBXNativeTarget "AVMediaTest" */ = {
+		DB60FC551C28328300439204 /* Build configuration list for PBXNativeTarget "ImagePickerTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DB48A3A91C21997C00854428 /* Debug */,
-				DB48A3AA1C21997C00854428 /* Release */,
+				DB60FC561C28328300439204 /* Debug */,
+				DB60FC571C28328300439204 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = DB48A38E1C21997C00854428 /* Project object */;
+	rootObject = DB60FC3B1C28328300439204 /* Project object */;
 }
