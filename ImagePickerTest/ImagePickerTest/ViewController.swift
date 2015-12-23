@@ -21,8 +21,9 @@ class ViewController: UIViewController , UIImagePickerControllerDelegate, UINavi
     
     @IBAction func choosePictures(sender: UIButton) {
         let controller = UIImagePickerController()
-        controller.sourceType = UIImagePickerControllerSourceType.Camera
+        controller.sourceType = UIImagePickerControllerSourceType.SavedPhotosAlbum
         controller.delegate = self
+        controller.allowsEditing = true
         UIApplication.sharedApplication().setStatusBarHidden(true, withAnimation: UIStatusBarAnimation.Fade)
         self.presentViewController(controller, animated: true) { () -> Void in
             print("start show choose image view")
@@ -30,18 +31,32 @@ class ViewController: UIViewController , UIImagePickerControllerDelegate, UINavi
     }
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]){
-        if info.count != 0{
-            for (index , value) in info{
-                print("path is \(index)")
-                if value is UIImage{
-                    setChooseImage.image = value as! UIImage
-                }
-            }
-        }
+        picker.dismissViewControllerAnimated(true, completion: nil)
+//        if info.count != 0{
+//            for (index , value) in info{
+//                print("path is \(index)")
+//                if value is UIImage{
+//                    setChooseImage.image = value as! UIImage
+//                }
+//            }
+//        }
+        var imageSource = info[UIImagePickerControllerOriginalImage] as? UIImage
+        let pool:NSThread = NSThread(target: self, selector: "dealWithImage:", object: imageSource)
+        pool.start()
     }
     
     func imagePickerControllerDidCancel(picker: UIImagePickerController){
         print("choose image view cancel")
+    }
+    
+    func dealWithImage(image:UIImage){
+        print("start deal pictures")
+        let size = CGSize(width: 320, height: 480)
+        UIGraphicsBeginImageContext(size)
+        image.drawInRect(CGRectMake(0, 0,size.width, size.height))
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        setChooseImage.image = newImage
     }
 
     override func didReceiveMemoryWarning() {
