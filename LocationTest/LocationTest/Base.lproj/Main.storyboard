@@ -1,25 +1,64 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LocationTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bqq-J4-l8V">
+                                <rect key="frame" x="96" y="40" width="128" height="30"/>
+                                <state key="normal" title="开始定位"/>
+                                <connections>
+                                    <action selector="startGetLocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cGJ-7I-MBn"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="54o-wu-Es3">
+                                <rect key="frame" x="16" y="89" width="300" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qw6-29-ubW">
+                                <rect key="frame" x="16" y="130" width="300" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="54o-wu-Es3" firstAttribute="top" secondItem="Bqq-J4-l8V" secondAttribute="bottom" constant="19" id="9DW-a8-EEQ"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="54o-wu-Es3" secondAttribute="leading" id="Ab8-vS-cO1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Qw6-29-ubW" secondAttribute="trailing" constant="-12" id="CjQ-wO-vj5"/>
+                            <constraint firstItem="Bqq-J4-l8V" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="80" id="PLo-9H-aux"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Bqq-J4-l8V" secondAttribute="trailing" constant="80" id="ZoM-Qd-lhn"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Qw6-29-ubW" secondAttribute="leading" id="f5Q-y2-0Om"/>
+                            <constraint firstItem="Qw6-29-ubW" firstAttribute="top" secondItem="54o-wu-Es3" secondAttribute="bottom" constant="20" id="fgK-gq-KJC"/>
+                            <constraint firstItem="Bqq-J4-l8V" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="j7w-id-bOT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="54o-wu-Es3" secondAttribute="trailing" constant="-12" id="uli-Rb-Qb5"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="showLocationLabel" destination="54o-wu-Es3" id="dKv-mZ-ihf"/>
+                        <outlet property="showLocationLabel1" destination="Qw6-29-ubW" id="9ze-nC-w7r"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="443" y="349"/>
         </scene>
     </scenes>
 </document>
