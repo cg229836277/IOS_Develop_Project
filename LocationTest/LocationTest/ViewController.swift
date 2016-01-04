@@ -25,27 +25,40 @@ class ViewController: UIViewController , CLLocationManagerDelegate {
         locationManager?.distanceFilter = 250
         locationManager?.desiredAccuracy = kCLLocationAccuracyBest
         locationManager?.requestAlwaysAuthorization()
+        locationManager?.headingFilter = 10
     }
     //http://sledgedev.com/corelocation-ios-8-and-swift/
-    //http://shrikar.com/swift-tutorial-corelocation-and-region-monitoring-in-ios-8/
     
     @IBAction func startGetLocation(sender: UIButton) {
         locationManager?.startUpdatingLocation()
+        locationManager?.startUpdatingHeading()
         print("开始定位")
     }
     
     func locationManager(manager: CLLocationManager, didUpdateToLocation newLocation: CLLocation, fromLocation oldLocation: CLLocation) {
         //print("\(newLocation.coordinate.longitude)")
         //print("\(newLocation.coordinate.latitude)")
-        var locationStr = "\(newLocation.coordinate.longitude)" + "\n" + "\(newLocation.coordinate.latitude)";
+        var locationStr = "\(newLocation.coordinate.longitude)" + "\n" + "\(newLocation.coordinate.latitude)"
+        var verticalAndHorizontal = "\(newLocation.horizontalAccuracy)" + "\n" + "\(newLocation.verticalAccuracy)"
         showLocationLabel.text = "\(newLocation.coordinate.longitude)"
         showLocationLabel1.text = "\(newLocation.coordinate.latitude)"
         print(locationStr)
+        print(verticalAndHorizontal)
     }
     
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
         showLocationLabel.text = "定位失败"
         print("定位失败")
+    }
+    
+    func locationManager(manager: CLLocationManager, didUpdateHeading newHeading: CLHeading) {
+        if newHeading.headingAccuracy >= 0{
+            var trueHeading = String(newHeading.trueHeading);
+            var magneticHeading = String(newHeading.magneticHeading);
+            print("地理学：" + trueHeading)//地理学方向
+            print("磁场学：" + magneticHeading)//磁场学方向
+            //0 is north , 90 is earst , 180 is south , 270 is west
+        }
     }
 
     override func didReceiveMemoryWarning() {
