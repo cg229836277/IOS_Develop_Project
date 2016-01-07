@@ -14,6 +14,7 @@
 		DBC0F9CA1C3AB9CB00EBAF00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBC0F9C81C3AB9CB00EBAF00 /* LaunchScreen.storyboard */; };
 		DBC0F9D21C3ABBBC00EBAF00 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBC0F9D11C3ABBBC00EBAF00 /* MapKit.framework */; };
 		DBC0F9D41C3ABD6600EBAF00 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBC0F9D31C3ABD6600EBAF00 /* CoreLocation.framework */; };
+		DBE3FF861C3BEED400FA5104 /* chuck.png in Resources */ = {isa = PBXBuildFile; fileRef = DBE3FF851C3BEED400FA5104 /* chuck.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		DBC0F9CB1C3AB9CB00EBAF00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBC0F9D11C3ABBBC00EBAF00 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		DBC0F9D31C3ABD6600EBAF00 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		DBE3FF851C3BEED400FA5104 /* chuck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chuck.png; path = ../../../Users/chuckchan/Desktop/images/chuck.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 		DBC0F9B31C3AB9CB00EBAF00 = {
 			isa = PBXGroup;
 			children = (
+				DBE3FF851C3BEED400FA5104 /* chuck.png */,
 				DBC0F9D31C3ABD6600EBAF00 /* CoreLocation.framework */,
 				DBC0F9D11C3ABBBC00EBAF00 /* MapKit.framework */,
 				DBC0F9BE1C3AB9CB00EBAF00 /* MapKitTest */,
@@ -138,6 +141,7 @@
 			files = (
 				DBC0F9CA1C3AB9CB00EBAF00 /* LaunchScreen.storyboard in Resources */,
 				DBC0F9C71C3AB9CB00EBAF00 /* Assets.xcassets in Resources */,
+				DBE3FF861C3BEED400FA5104 /* chuck.png in Resources */,
 				DBC0F9C51C3AB9CB00EBAF00 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +306,7 @@
 				DBC0F9D01C3AB9CB00EBAF00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
