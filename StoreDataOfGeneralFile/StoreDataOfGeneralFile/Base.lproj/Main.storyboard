@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StoreDataOfGeneralFile" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6qj-2d-l5V">
+                                <rect key="frame" x="40" y="90" width="520" height="30"/>
+                                <state key="normal" title="Store Data"/>
+                                <connections>
+                                    <action selector="storeDataClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NEV-an-8bd"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PaM-Ql-BVN">
+                                <rect key="frame" x="40" y="40" width="520" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vy2-BO-vZu">
+                                <rect key="frame" x="40" y="140" width="520" height="30"/>
+                                <state key="normal" title="Get Data"/>
+                                <connections>
+                                    <action selector="getDataClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1bg-1a-n0h"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PaM-Ql-BVN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="3Gr-p0-jEJ"/>
+                            <constraint firstItem="Vy2-BO-vZu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="8ip-5m-lDL"/>
+                            <constraint firstItem="Vy2-BO-vZu" firstAttribute="top" secondItem="6qj-2d-l5V" secondAttribute="bottom" constant="20" id="G6O-Yh-WJh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PaM-Ql-BVN" secondAttribute="trailing" constant="20" id="HuX-wl-UJS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6qj-2d-l5V" secondAttribute="trailing" constant="20" id="JD9-Li-jwX"/>
+                            <constraint firstItem="6qj-2d-l5V" firstAttribute="top" secondItem="PaM-Ql-BVN" secondAttribute="bottom" constant="20" id="P3p-RA-UY6"/>
+                            <constraint firstItem="6qj-2d-l5V" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="Y73-cI-fve"/>
+                            <constraint firstItem="PaM-Ql-BVN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="jSC-Es-Ksy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Vy2-BO-vZu" secondAttribute="trailing" constant="20" id="yLG-mp-5K0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ShowDataTextFiled" destination="PaM-Ql-BVN" id="sUe-Ip-DdK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-35" y="181"/>
+        </scene>
+    </scenes>
+</document>

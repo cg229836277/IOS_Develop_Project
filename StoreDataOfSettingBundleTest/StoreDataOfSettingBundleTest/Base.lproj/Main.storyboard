@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StoreDataOfSettingBundleTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zqx-7p-YEM">
+                                <rect key="frame" x="36" y="40" width="248" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k1Q-KK-ta8">
+                                <rect key="frame" x="36" y="90" width="248" height="30"/>
+                                <state key="normal" title="保存设置"/>
+                                <connections>
+                                    <action selector="saveSettingBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Nr-et-qve"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfc-65-tld">
+                                <rect key="frame" x="36" y="140" width="248" height="30"/>
+                                <state key="normal" title="获取设置"/>
+                                <connections>
+                                    <action selector="getSettingBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sad-hc-yx2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="k1Q-KK-ta8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="1rZ-PI-Aqc"/>
+                            <constraint firstItem="gfc-65-tld" firstAttribute="top" secondItem="k1Q-KK-ta8" secondAttribute="bottom" constant="20" id="5gI-Yt-D89"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gfc-65-tld" secondAttribute="trailing" constant="20" id="LeV-5r-xUo"/>
+                            <constraint firstItem="gfc-65-tld" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="Nv6-zF-3oW"/>
+                            <constraint firstItem="Zqx-7p-YEM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="PAM-Sg-dmd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="k1Q-KK-ta8" secondAttribute="trailing" constant="20" id="QPb-5x-neS"/>
+                            <constraint firstItem="k1Q-KK-ta8" firstAttribute="top" secondItem="Zqx-7p-YEM" secondAttribute="bottom" constant="20" id="WNm-tI-CZY"/>
+                            <constraint firstItem="Zqx-7p-YEM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="aiB-zK-cPA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Zqx-7p-YEM" secondAttribute="trailing" constant="20" id="fpA-mE-Udo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="showSettingText" destination="Zqx-7p-YEM" id="EO0-2c-Ed4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="326" y="317"/>
+        </scene>
+    </scenes>
+</document>
