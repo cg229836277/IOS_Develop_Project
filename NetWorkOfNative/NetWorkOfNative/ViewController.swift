@@ -37,6 +37,14 @@ class ViewController: UIViewController {
                 self.showQrCodeImage.image = UIImage(data: data!)
             }
         }
+        
+//        NSURLConnection.sendAsynchronousRequest(requestObject, queue: NSOperationQueue()) { (_, data, e) -> Void in
+//            if e == nil && data != nil{
+//                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+//                    self.showQrCodeImage.image = UIImage(data: data!)
+//                })
+//            }
+//        }
 
     }
     
