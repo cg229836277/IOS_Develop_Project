@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController , NSURLConnectionDelegate , NSURLConnectionDataDelegate{
 
     @IBOutlet weak var showQrCodeImage: UIImageView!
     
@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         startLoadWeatherInfo()
         
     }
-    
+    //async get request
     func startLoadQRCode(){
         let qrUrl = "http://api.k780.com:88/?app=qr.get&data=chukchan&level=L&size=12"
         
@@ -47,7 +47,7 @@ class ViewController: UIViewController {
 //        }
 
     }
-    
+    //get异步请求
     func startLoadWeatherInfo(){
         let weatherUrl = "http://api.k780.com:88/?app=weather.future&weaid=1&&appkey=10003&sign=b59bc3ef6191eb9f747dd4e83c99f2a4&format=json"
         let weatherRequest = NSURLRequest(URL: NSURL(string: weatherUrl)!)
@@ -71,6 +71,95 @@ class ViewController: UIViewController {
                 
             }
         }
+    }
+    
+    //同步请求
+    func startSyncRequest(){
+        var response:NSURLResponse?
+        var syncUrl = NSURL(string: "http://api.k780.com:88/?app=weather.future&weaid=1&&appkey=10003&sign=b59bc3ef6191eb9f747dd4e83c99f2a4&format=json")
+        var request = NSURLRequest(URL: syncUrl!)
+        var data = try! NSURLConnection.sendSynchronousRequest(request, returningResponse: &response)
+        var jsonString = NSString(data: data, encoding: NSUTF8StringEncoding)
+        print("data is \(jsonString)")
+    }
+    //异步请求
+    func startAsyncRequest(){
+        var response:NSURLResponse?
+        var syncUrl = NSURL(string: "http://api.k780.com:88/?app=weather.future&weaid=1&&appkey=10003&sign=b59bc3ef6191eb9f747dd4e83c99f2a4&format=json")
+        var request = NSURLRequest(URL: syncUrl!)
+        var connection = NSURLConnection(request: request, delegate: self)
+        connection?.scheduleInRunLoop(NSRunLoop.currentRunLoop() , forMode: NSRunLoopCommonModes)
+        connection?.start()
+    }
+    
+    //get同步请求
+    func startGetSyncRequest(){
+        var response:NSURLResponse?
+        var syncUrl = NSURL(string: "http://api.k780.com:88/?app=weather.future&weaid=1&&appkey=10003&sign=b59bc3ef6191eb9f747dd4e83c99f2a4&format=json")
+        var request = NSURLRequest(URL: syncUrl!
+            , cachePolicy: NSURLRequestCachePolicy.UseProtocolCachePolicy, timeoutInterval: 10)
+        var data = try! NSURLConnection.sendSynchronousRequest(request, returningResponse: &response)
+        var jsonString = NSString(data: data, encoding: NSUTF8StringEncoding)
+        print("data is \(jsonString)")
+    }
+    
+    //post同步请求
+    func startPostSyncRequest(){
+        var response:NSURLResponse?
+        var syncUrl = NSURL(string: "http://api.k780.com:88/")
+        var request = NSMutableURLRequest(URL: syncUrl!
+            , cachePolicy: NSURLRequestCachePolicy.UseProtocolCachePolicy, timeoutInterval: 10)
+        request.HTTPMethod = "POST"
+        var config = "app=weather.future&weaid=1&&appkey=10003&sign=b59bc3ef6191eb9f747dd4e83c99f2a4&format=json"
+        var data:NSData = config.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: true)!
+        request.HTTPBody = data
+        var receiveData = try! NSURLConnection.sendSynchronousRequest(request, returningResponse: &response)
+        var jsonString = NSString(data: receiveData, encoding: NSUTF8StringEncoding)
+        print("data is \(jsonString)")
+    }
+    //post异步请求
+    func startPostAsyncRequest(){
+        var response:NSURLResponse?
+        var syncUrl = NSURL(string: "http://api.k780.com:88/")
+        var request = NSMutableURLRequest(URL: syncUrl!
+            , cachePolicy: NSURLRequestCachePolicy.UseProtocolCachePolicy, timeoutInterval: 10)
+        request.HTTPMethod = "POST"
+        var config = "app=weather.future&weaid=1&&appkey=10003&sign=b59bc3ef6191eb9f747dd4e83c99f2a4&format=json"
+        var data:NSData = config.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: true)!
+        request.HTTPBody = data
+        var connection = NSURLConnection(request: request, delegate: self)
+    }
+    
+    func connection(connection: NSURLConnection, didFailWithError error: NSError) {
+        print("请求失败")
+    }
+    
+    func connection(connection: NSURLConnection, willSendRequest request: NSURLRequest, redirectResponse response: NSURLResponse?) -> NSURLRequest?{
+        return request
+    }
+    func connection(connection: NSURLConnection, didReceiveResponse response: NSURLResponse){
+        //接收响应
+    }
+    
+    func connection(connection: NSURLConnection, didReceiveData data: NSData){
+        //收到数据
+    }
+    
+    func connection(connection: NSURLConnection, needNewBodyStream request: NSURLRequest) -> NSInputStream?{
+        //新的数据流
+        return request.HTTPBodyStream
+    }
+    func connection(connection: NSURLConnection, didSendBodyData bytesWritten: Int, totalBytesWritten: Int, totalBytesExpectedToWrite: Int){
+        //请求进度
+    }
+    
+    func connection(connection: NSURLConnection, willCacheResponse cachedResponse: NSCachedURLResponse) -> NSCachedURLResponse?{
+        //缓存响应
+        return cachedResponse
+    }
+    
+    func connectionDidFinishLoading(connection: NSURLConnection){
+        //请求结束
     }
 
     override func didReceiveMemoryWarning() {
